@@ -4,7 +4,7 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     container:
-    image:  cypress/browsers:22.16.0  # Adicionado uma imagem que tem o Chrome instalado a fim de que os testes rodarem nele
+    image:  cypress/browsers:node-22.16.0-chrome-136.0.7103.113-1-ff-138.0.4-edge-136.0.3240.76-1  # Adicionado uma imagem que tem o Chrome instalado a fim de que os testes rodarem nele
     options: --user 1001  #Adicionando esse parâmentro a fim de subir a imagem do Cypress/browser como admin, sem restrições de acesso.
 
     # Runs tests in parallel with matrix strategy https://docs.cypress.io/guides/guides/parallelization
